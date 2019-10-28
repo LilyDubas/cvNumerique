@@ -12,39 +12,9 @@ html, body{
   font-size: 25px;
   font-weight: bold;
 }
-/* début navbar */
-.navbar{
-  top:0px;
-  overflow: hidden;
-  z-index: 1;
-}
 
-#nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  background-color: grey;
-  width: 100%;
-  height:35px;
-
-}
-.liNav{
-  margin:auto;
-  color:white;
-}
-.liNav:hover{
-  background-color:#ffbf00;
-  padding: 5px;
-  color:black;
-}
-  /* fin navbar */
   #presentation{
     background-image: url(/home/lily/cvNumerique/assets/img/spacePattern.jpg);
-  }
-  #pres{
-    color: white;
   }
   #biographie{
     background-color:#000d1a;
@@ -56,31 +26,32 @@ html, body{
   }
   .profilColor{
     filter: grayscale(100%);
-    width:225px;
-    height:180px;
+    width:100%;
+    height:auto;
   }
   .profilColor:hover{
     filter: grayscale(0%);
   }
   .formationImg{
     filter: grayscale(100%);
-    width:225px;
-    height:180px;
+    width:100%;
+    height:auto;
   }
   .formationImg:hover{
     filter: grayscale(0%);
   }
   .experienceImg{
     filter: grayscale(100%);
-    width:225px;
-    height: 180px;
+    width:100%;
+    height: auto;
   }
   .experienceImg:hover{
     filter: grayscale(0%);
   }
 #howIWasteMyTime{
   width:100%;
-  height:450px;
+  height:auto;
+  padding:5%;
 }
 #Ai{
   width: 150px;
@@ -96,4 +67,20 @@ html, body{
   color:grey;
   background-image:linear-gradient(#ffff66,yellow);
   	-webkit-text-fill-color:#383838;
+}
+
+#cards{
+  display: flex;
+}
+#howIWasteMyTime{
+  display: flex;
+}
+@media screen and (max-width: 600px)
+{
+  #cards{
+    display: block;
+  }
+  #howIWasteMyTime{
+    display: block;
+  }
 }
